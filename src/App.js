@@ -72,9 +72,7 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem('list', JSON.stringify(list))
-    return () => {
-      cleanup
-    }
+   
   }, [list])
 
   return (
